@@ -44,7 +44,25 @@ Use the PyTorch installation helper to install the correct version for your CUDA
 
 ### ⚡ Create Virtual Environment:
 ```bash
-conda create -n tf-env python=3.10
-conda activate tf-env
+conda env list
+conda activate tv10
+
+conda create -n tv10 python=3.10
+conda activate tv10
+
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 conda install pytorch torchaudio pytorch-cuda -c pytorch -c nvidia
+
+python Test_Torch.py
+```
+
+## ✅ Final Test – Verify GPU is Detected by Tensorflow
+
+### ⚡ Create Virtual Environment:
+```bash
+conda create -n tf10 python=3.10
+conda activate tf10
+pip install tensorflow==2.10 numpy==1.24.4
+python Test_TensorFlow.py
+```
+
