@@ -44,9 +44,6 @@ Use the PyTorch installation helper to install the correct version for your CUDA
 
 ### ⚡ Create Virtual Environment:
 ```bash
-conda env list
-conda activate tv10
-
 conda create -n tv10 python=3.10
 conda activate tv10
 
@@ -62,7 +59,9 @@ python Test_Torch.py
 ```bash
 conda create -n tf10 python=3.10
 conda activate tf10
+
 pip install tensorflow==2.10 numpy==1.24.4
+
 python Test_TensorFlow.py
 ```
 
