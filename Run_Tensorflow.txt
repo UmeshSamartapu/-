@@ -1,0 +1,15 @@
+conda env list
+conda activate tf10 
+conda activate tf09 
+
+conda create -n tf09 python=3.9
+conda activate tf09
+pip install tensorflow==2.10 --index-url https://pypi.org/simple
+python Test_TensorFlow.py
+
+
+
+conda create -n tf10 python=3.10
+conda activate tf10
+pip install tensorflow==2.10 numpy==1.24.4
+python Test_TensorFlow.py
